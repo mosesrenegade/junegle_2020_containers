@@ -1,0 +1,3 @@
+[submodule "lab2/nmap"]
+	path = lab2/nmap
+	url = http://www.github.com/nmap/nmap
