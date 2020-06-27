@@ -1,0 +1,5 @@
+docker run -it --name centos-tools --privileged                       \                     
+      --ipc=host --net=host --pid=host -e HOST=/host                \
+      -e NAME=centos-tools -e IMAGE=centos/centos-tools                  \
+      -v /run:/run -v /var/log:/var/log                             \
+      -v /etc/localtime:/etc/localtime -v /:/host centos/tools

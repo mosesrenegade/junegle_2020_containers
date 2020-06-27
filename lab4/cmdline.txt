@@ -1,0 +1,1 @@
+docker run -it -d -v `pwd`/tmp:/tmp nginx 

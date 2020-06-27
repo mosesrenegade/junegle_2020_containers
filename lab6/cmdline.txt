@@ -1,0 +1,5 @@
+systemctl stop docker || sudo /etc/init.d/docker stop
+
+dockerd -H unix:///var/run/docker.sock -H tcp://127.0.0.1
+
+docker -h 127.0.0.1 run -it --name nginx --privileged --ipc=host --net=host --pid=host -v /run:/run -v /var/log:/var/log -v /:/host busybox /bin/sh
